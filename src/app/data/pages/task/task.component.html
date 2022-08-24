@@ -1,0 +1,70 @@
+<div style="border-color: black; border-style: solid;" >
+  <table>
+    <tr>
+      <td>
+
+        <div style="margin-left: 30px; margin-top: 30px;">
+
+          <button type="button" class="btn btn-warning position-relative" style="width: 120px">
+            Last Week
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+              45
+              <span class="visually-hidden">Last Week</span>
+            </span>
+          </button>
+
+        </div>
+
+      </td>
+      <td>
+
+        <div style="margin-left: 30px; margin-top: 30px;">
+
+          <button type="button" class="btn btn-primary position-relative" style="width: 120px">
+            Yesterday
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+              4
+              <span class="visually-hidden">Yesterday</span>
+            </span>
+          </button>
+
+        </div>
+
+      </td>
+      <td>
+
+        <div style="margin-left: 30px; margin-top: 30px;">
+
+          <button type="button" class="btn btn-danger position-relative" style="width: 120px">
+            Pedding
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+              7
+              <span class="visually-hidden">Pendding</span>
+            </span>
+          </button>
+
+        </div>
+
+      </td>
+      <td>
+
+        <div style="margin-left: 30px; margin-top: 30px;">
+
+          <button type="button" class="btn btn-success position-relative" style="width: 120px">
+            To do
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+              4
+              <span class="visually-hidden">To do</span>
+            </span>
+          </button>
+
+        </div>
+
+      </td>
+      <th>
+  </table>
+</div>
+
+<ul>
+  <li *ngFor="let tarefa of tarefas"> Tarefa + {{ tarefa.content }} + Finalizada + {{tarefa.completed}} </li>
+</ul>
