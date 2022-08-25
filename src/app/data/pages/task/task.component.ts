@@ -25,9 +25,6 @@ export class TaskComponent implements OnInit {
   loadTasks() {
     this.todoistService.getAllTasks().subscribe((tarefas: TaskModel[]) => {
       this.tarefas = tarefas;
-      this.tarefas.map((item) => {
-        console.log(item.content)
-      })
     });
   }
 }
