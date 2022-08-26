@@ -1,70 +1,48 @@
-<div style="border-color: black; border-style: solid;" >
-  <table>
-    <tr>
-      <td>
-
-        <div style="margin-left: 30px; margin-top: 30px;">
-
-          <button type="button" class="btn btn-warning position-relative" style="width: 120px">
-            Last Week
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
-              45
-              <span class="visually-hidden">Last Week</span>
-            </span>
-          </button>
-
-        </div>
-
-      </td>
-      <td>
-
-        <div style="margin-left: 30px; margin-top: 30px;">
-
-          <button type="button" class="btn btn-primary position-relative" style="width: 120px">
-            Yesterday
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
-              4
-              <span class="visually-hidden">Yesterday</span>
-            </span>
-          </button>
-
-        </div>
-
-      </td>
-      <td>
-
-        <div style="margin-left: 30px; margin-top: 30px;">
-
-          <button type="button" class="btn btn-danger position-relative" style="width: 120px">
-            Pedding
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
-              7
-              <span class="visually-hidden">Pendding</span>
-            </span>
-          </button>
-
-        </div>
-
-      </td>
-      <td>
-
-        <div style="margin-left: 30px; margin-top: 30px;">
-
-          <button type="button" class="btn btn-success position-relative" style="width: 120px">
-            To do
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
-              4
-              <span class="visually-hidden">To do</span>
-            </span>
-          </button>
-
-        </div>
-
-      </td>
-      <th>
+<div class="container col-sm-10">
+  <table class="table table-striped-columns">
+    <thead class="table-primary">
+      <tr>
+        <th scope="col" width="25%">To late</th>
+        <th scope="col" width="25%">To do</th>
+        <th scope="col" width="25%">Stop</th>
+        <th scope="col" width="25%">Done</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr>
+        <td>
+          <div class="card-todo" *ngFor="let tarefa of tarefas">
+            {{ tarefa.content }}
+          </div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
   </table>
-</div>
 
-<ul>
-  <li *ngFor="let tarefa of tarefas"> Tarefa + {{ tarefa.content }} + Finalizada + {{tarefa.completed}} </li>
-</ul>
+  <a href="testando">entrar</a>
+  <br />
+
+  <div class="container col-sm-5">
+    <table class="table table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Código</th>
+          <th scope="col">Descrição</th>
+          <th scope="col">Finalizado</th>
+          <th scope="col">Data da Tarefa</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr *ngFor="let tarefa of tarefas">
+          <th>{{ tarefa.id }}</th>
+          <td>{{ tarefa.content }}</td>
+          <td>{{ tarefa.completed }}</td>
+          <td>{{ tarefa.due.date | date: "dd/MM/yyyy" }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

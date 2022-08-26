@@ -9,10 +9,9 @@ import { TaskModel } from "../model/task.model";
 })
 export class TodoistService {
 
-  private url;
+  private url = 'https://api.todoist.com/rest/v1/tasks';
 
   constructor(private http: HttpClient) {
-    this.url = 'https://api.todoist.com/rest/v1/tasks';
   }
 
   httpOptions = {
