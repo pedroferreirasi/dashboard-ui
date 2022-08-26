@@ -17,7 +17,6 @@ export class TaskComponent implements OnInit {
   constructor(private todoistService: TodoistService) { }
 
   ngOnInit(): void {
-    //this.loadTasks();
     this.loadTasks();
   }
 

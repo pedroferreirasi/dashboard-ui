@@ -6,11 +6,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaskComponent } from './data/pages/task/task.component';
+import { TestandoumComponent } from './data/pages/testandoum/testandoum.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskComponent
+    TaskComponent,
+    TestandoumComponent
   ],
   imports: [
     BrowserModule,
