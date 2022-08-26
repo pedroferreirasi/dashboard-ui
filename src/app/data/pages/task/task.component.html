@@ -77,18 +77,8 @@
 
 </div>
 
-<div class="card-todo">
-  <img src="../../../../assets/icon-user-7.jpg" />
-  Finalizar ticket da Sulwork
-</div>
-<div class="card-todo">
-  Alura
-</div>
-<div class="card-todo">
-  Duolingo
-</div>
-<div class="card-todo">
-  ADT08
+<div class="card-todo" *ngFor="let tarefa of tarefas">
+  {{ tarefa.content }}
 </div>
 
 <br>
