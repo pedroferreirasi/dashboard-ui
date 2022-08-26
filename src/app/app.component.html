@@ -1,1 +1,44 @@
-<app-task></app-task>
+<header></header>
+<main>
+  <div>
+    <div class="panel-main-left">
+      <table width="100%">
+        <tr class="classemenu" width="100%">
+          <td class="classemenu" width="100%">
+            <a href="">Home</a>
+          </td>
+        </tr>
+        <tr class="classemenu">
+          <td>
+            <a href="task">Task</a>
+          </td>
+        </tr>
+        <tr class="classemenu">
+          <td>
+            <a href="testando">testando</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="panel-main-top">
+      <table width="100%">
+        <tr>
+          <td>
+            <div class="panel-main-tittle">
+              <button type="button" class="btn btn-primary btn-sm">
+                Menu
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="panel-main-body">
+              <router-outlet></router-outlet>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</main>
