@@ -2,7 +2,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
-import { TaskModel } from "../model/task.model";
+import { TaskModel } from "../../data/domain/entities/task.model";
 
 @Injectable({
   providedIn: 'root'

@@ -1,8 +1,8 @@
-import { TodoistService } from '../../services/todoist.service';
+import { TodoistService } from '../../../data/services/task.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { TaskModel } from '../../model/task.model'
+import { TaskModel } from '../../../data/domain/entities/task.model'
 
 @Component({
   selector: 'app-task',
