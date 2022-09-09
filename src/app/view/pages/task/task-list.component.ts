@@ -5,11 +5,11 @@ import { Observable } from 'rxjs';
 import { TaskModel } from '../../../data/domain/entities/task.model'
 
 @Component({
-  selector: 'app-task',
-  templateUrl: './task.component.html',
-  styleUrls: ['./task.component.scss']
+  selector: 'app-task-list',
+  templateUrl: './task-list.component.html',
+  styleUrls: ['./task-list.component.scss']
 })
-export class TaskComponent implements OnInit {
+export class TaskListComponent implements OnInit {
 
   allToDoIst: Observable<TaskModel[]> = new Observable<TaskModel[]>;
   tarefas: TaskModel[] = [];

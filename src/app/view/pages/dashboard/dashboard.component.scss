@@ -1,0 +1,109 @@
+$bodercardwhite: 8px solid;
+
+.card-dash {
+  border-radius: 10px 10px 10px 10px;
+  width: 180px;
+  height: fit-content;
+  padding: 10px;
+  color: white;
+  align-content: center;
+  margin-left: 10px;
+}
+
+.card-dash-blue {
+  border-radius: inherit;
+  background-color: #005b8f;
+  width: inherit;
+  height: inherit;
+  padding: inherit;
+  color: inherit;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.card-dash-red {
+  border-radius: inherit;
+  background-color: red;
+  width: inherit;
+  height: inherit;
+  padding: inherit;
+  color: inherit;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.card-dash-orange {
+  border-radius: inherit;
+  background-color: orangered;
+  width: inherit;
+  height: inherit;
+  padding: inherit;
+  color: inherit;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.card-dash-green {
+  border-radius: inherit;
+  background-color: green;
+  width: inherit;
+  height: inherit;
+  padding: inherit;
+  color: inherit;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.card-white {
+  border-radius: 5px 5px 5px 5px;
+  width: 250px;
+  height: fit-content;
+  padding: 10px;
+  align-content: center;
+  margin-left: 10px;
+  color: black;
+}
+
+.card-white-blue {
+  border-radius: inherit;
+  background-color: white;
+  width: inherit;
+  height: inherit;
+  padding: inherit;
+  color: inherit;
+  box-shadow: -5px 5px 10px grey;
+  border-left: $bodercardwhite;
+  border-color: #005b8f;
+}
+
+.card-white-red {
+  border-radius: inherit;
+  background-color: white;
+  width: inherit;
+  height: inherit;
+  padding: inherit;
+  color: inherit;
+  box-shadow: -5px 5px 10px grey;
+  border-left: $bodercardwhite;
+  border-color: red;
+}
+
+.card-white-orange {
+  border-radius: inherit;
+  background-color: white;
+  width: inherit;
+  height: inherit;
+  padding: inherit;
+  color: inherit;
+  box-shadow: -5px 5px 10px grey;
+  border-left: $bodercardwhite;
+  border-color: goldenrod;
+}
+
+.card-white-green {
+  border-radius: inherit;
+  background-color: white;
+  width: inherit;
+  height: inherit;
+  padding: inherit;
+  color: inherit;
+  box-shadow: -5px 5px 10px grey;
+  border-left: $bodercardwhite;
+  border-color: green;
+}
