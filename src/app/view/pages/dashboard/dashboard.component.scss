@@ -2,7 +2,7 @@ $bodercardwhite: 8px solid;
 
 .card-dash {
   border-radius: 10px 10px 10px 10px;
-  width: 180px;
+  width: 200px;
   height: fit-content;
   padding: 10px;
   color: white;
@@ -43,6 +43,26 @@ $bodercardwhite: 8px solid;
 .card-dash-green {
   border-radius: inherit;
   background-color: green;
+  width: inherit;
+  height: inherit;
+  padding: inherit;
+  color: inherit;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.card-dash-purple {
+  border-radius: inherit;
+  background-color: purple;
+  width: inherit;
+  height: inherit;
+  padding: inherit;
+  color: inherit;
+  box-shadow: 5px 5px 10px grey;
+}
+
+.card-dash-yellow {
+  border-radius: inherit;
+  background-color: #f0b300;
   width: inherit;
   height: inherit;
   padding: inherit;
