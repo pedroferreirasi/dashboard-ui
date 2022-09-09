@@ -5,14 +5,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TaskComponent } from './data/pages/task/task.component';
-import { TestandoumComponent } from './data/pages/testandoum/testandoum.component';
+import { TaskListComponent } from './view/pages/task/task-list.component';
+import { TestandoumComponent } from './view/pages/testandoum/testandoum.component';
+import { DashboardComponent } from './view/pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TaskComponent,
-    TestandoumComponent
+    TaskListComponent,
+    TestandoumComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

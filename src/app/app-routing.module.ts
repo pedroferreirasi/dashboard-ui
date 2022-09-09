@@ -1,11 +1,12 @@
-import { TestandoumComponent } from './data/pages/testandoum/testandoum.component';
+import { TestandoumComponent } from './view/pages/testandoum/testandoum.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TaskComponent } from './data/pages/task/task.component';
+import { TaskListComponent } from './view/pages/task/task-list.component';
+import { DashboardComponent } from './view/pages/dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: 'task', component: TaskComponent,  },
-  { path: 'testando', component: TestandoumComponent },
+  { path: 'tasklist', component: TaskListComponent },
+  { path: 'dashboard', component: DashboardComponent}
 ];
 
 @NgModule({
