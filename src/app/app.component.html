@@ -1,6 +1,32 @@
 <header></header>
 <main>
-  <div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 panel-main-left">
+        <div class="classemenu">
+          <a href="">Home</a>
+        </div>
+        <div class="classemenu">
+          <a href="dashboard">DashBoard</a>
+        </div>
+        <div class="classemenu">
+          <a href="tasklist">Task</a>
+        </div>
+      </div>
+      <div class="col-10">
+        <div class="row">
+          <div class="col-12 panel-main-top">
+           bia
+          </div>
+          <div class="col-12 panel-main-right">
+            <router-outlet></router-outlet>
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <!--<div>
     <div class="panel-main-left">
       <table width="100%">
         <tr class="classemenu" width="100%">
@@ -40,5 +66,5 @@
         </tr>
       </table>
     </div>
-  </div>
+  </div>//-->
 </main>
