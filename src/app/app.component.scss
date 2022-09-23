@@ -1,6 +1,14 @@
+.testando {
+  background-color: orange;
+  top: -100px;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .panel-main-top {
   background-color: white;
-  height: 8vh;  ;
+  height: 6vh;  ;
   padding-top: 11px;
   border-bottom: 1px outset;
 }
@@ -17,13 +25,6 @@
   padding-right: 10px;
   height: 100vh;
   background-color: whitesmoke;
-}
-
-/* unvisited link */
-a:link, a:visited {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 .classemenu {

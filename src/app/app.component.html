@@ -1,8 +1,56 @@
 <header></header>
 <main>
   <div class="container-fluid">
+    <div class="row" style="background-color: #045cdc; height: 6vh">
+      <div class="col-4">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          Menu
+        </button>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-4" style="text-align: right">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          Ficha Medica
+        </button>
+      </div>
+    </div>
     <div class="row">
-      <div class="col-2 panel-main-left">
+      <div class="col-12 panel-main-right">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="offcanvas offcanvas-start"
+    data-bs-scroll="true"
+    tabindex="-1"
+    id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="col-2">
         <div class="classemenu">
           <a href="">Home</a>
         </div>
@@ -13,58 +61,24 @@
           <a href="tasklist">Task</a>
         </div>
       </div>
-      <div class="col-10">
-        <div class="row">
-          <div class="col-12 panel-main-top">
-            <button type="button" class="btn btn-primary btn-sm">Menu</button>
-          </div>
-          <div class="col-12 panel-main-right">
-            <router-outlet></router-outlet>
-          </div>
-       </div>
-      </div>
     </div>
   </div>
 
-  <!--<div>
-    <div class="panel-main-left">
-      <table width="100%">
-        <tr class="classemenu" width="100%">
-          <td class="classemenu" width="100%">
-            <a href="">Home</a>
-          </td>
-        </tr>
-        <tr class="classemenu">
-          <td>
-            <a href="dashboard">DashBoard</a>
-          </td>
-        </tr>
-        <tr class="classemenu">
-          <td>
-            <a href="tasklist">Task</a>
-          </td>
-        </tr>
-      </table>
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Ficha Medica</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
     </div>
-    <div class="panel-main-top">
-      <table width="100%">
-        <tr>
-          <td>
-            <div class="panel-main-tittle">
-              <button type="button" class="btn btn-primary btn-sm">
-                Menu
-              </button>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="panel-main-body">
-              <router-outlet></router-outlet>
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </div>//-->
+    <div class="offcanvas-body">...</div>
+  </div>
 </main>
