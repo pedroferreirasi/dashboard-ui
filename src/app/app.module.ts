@@ -6,15 +6,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TaskListComponent } from './view/pages/task/task-list.component';
-import { TestandoumComponent } from './view/pages/testandoum/testandoum.component';
 import { DashboardComponent } from './view/pages/dashboard/dashboard.component';
+import { BodyMesureListComponent } from './view/pages/body-mesure/body-mesure-list.component';
+import { MenuComponent } from './view/component/menu/menu.component';
+import { FichaMedicaComponent } from './view/component/ficha-medica/ficha-medica.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskListComponent,
-    TestandoumComponent,
-    DashboardComponent
+    DashboardComponent,
+    BodyMesureListComponent,
+    MenuComponent,
+    FichaMedicaComponent
   ],
   imports: [
     BrowserModule,
