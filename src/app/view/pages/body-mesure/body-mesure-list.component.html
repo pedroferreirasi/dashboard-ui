@@ -1,1 +1,24 @@
-<p>body-mesure-list works!</p>
+<div class="container col-sm-11">
+  <h3>Medidas</h3>
+  <hr>
+  <table class="table table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Cod.</th>
+        <th scope="col">Data</th>
+        <th scope="col">Busto</th>
+        <th scope="col">Cintura</th>
+        <th scope="col">Quadril</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor="let body of listBodyMeasure">
+        <th>{{ body.id }}</th>
+        <td>{{ body.measurementDate | date: "dd/MM/yyyy" }}</td>
+        <td>{{ body.bustSize | number : '1.2-2' }}</td>
+        <td>{{ body.waistSize | number : '1.2-2' }}</td>
+        <td>{{ body.hipSize | number : '1.2-2' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,4 +1,4 @@
-export interface BodyMesure {
+export interface BodyMeasure {
   id: number;
   recordCreated: string;
   measurementDate: Date;
