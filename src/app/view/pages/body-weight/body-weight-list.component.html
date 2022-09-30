@@ -1,0 +1,26 @@
+<div class="container col-sm-11">
+  <h3>Histórico de Peso</h3>
+  <hr>
+  <table class="table table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Código</th>
+        <th scope="col">Data</th>
+        <th scope="col">Peso</th>
+        <th scope="col">Visceral</th>
+        <th scope="col">Corportal</th>
+        <th scope="col">IMC</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor="let entity of listEntity">
+        <td>{{ entity.id }}</td>
+        <td>{{ entity.weihtDate | date: "dd/MM/yyyy" }}</td>
+        <td>{{ entity.weight }}</td>
+        <td>{{ entity.visceralFat }}</td>
+        <td>{{ entity.bodyFat  }}</td>
+        <td>{{ entity.imc | number : '1.2-2' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

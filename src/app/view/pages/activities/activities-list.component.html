@@ -1,0 +1,24 @@
+<div class="container col-sm-11">
+  <h3>Atividades</h3>
+  <hr>
+  <table class="table table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Código</th>
+        <th scope="col">Data</th>
+        <th scope="col">Distância</th>
+        <th scope="col">Pace Médio</th>
+        <th scope="col">Heart Hate</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      <tr *ngFor="let entity of listEntity">
+        <td>{{ entity.id }}</td>
+        <td>{{ entity.activityDateTimeInitial | date: "dd/MM/yyyy" }}</td>
+        <td>{{ entity.distance }}</td>
+        <td>{{ entity.paceMedium }}</td>
+        <td>{{ entity.maxHeartRate  }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

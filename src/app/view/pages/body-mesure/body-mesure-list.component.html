@@ -13,7 +13,7 @@
     </thead>
     <tbody class="table-group-divider">
       <tr *ngFor="let body of listBodyMeasure">
-        <th>{{ body.id }}</th>
+        <td>{{ body.id }}</td>
         <td>{{ body.measurementDate | date: "dd/MM/yyyy" }}</td>
         <td>{{ body.bustSize | number : '1.2-2' }}</td>
         <td>{{ body.waistSize | number : '1.2-2' }}</td>

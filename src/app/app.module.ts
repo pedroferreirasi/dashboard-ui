@@ -10,6 +10,9 @@ import { DashboardComponent } from './view/pages/dashboard/dashboard.component';
 import { BodyMesureListComponent } from './view/pages/body-mesure/body-mesure-list.component';
 import { MenuComponent } from './view/component/menu/menu.component';
 import { FichaMedicaComponent } from './view/component/ficha-medica/ficha-medica.component';
+import { BodyWeightListComponent } from './view/pages/body-weight/body-weight-list.component';
+import { FichaMedicaListComponent } from './view/pages/ficha-medica/ficha-medica-list.component';
+import { ActivitiesListComponent } from './view/pages/activities/activities-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { FichaMedicaComponent } from './view/component/ficha-medica/ficha-medica
     DashboardComponent,
     BodyMesureListComponent,
     MenuComponent,
-    FichaMedicaComponent
+    FichaMedicaComponent,
+    BodyWeightListComponent,
+    FichaMedicaListComponent,
+    ActivitiesListComponent
   ],
   imports: [
     BrowserModule,
