@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TaskListComponent } from './view/pages/task/task-list.component';
 import { DashboardComponent } from './view/pages/dashboard/dashboard.component';
 import { BodyMesureListComponent } from './view/pages/body-mesure/body-mesure-list.component';
-import { BodyWeightListComponent } from './view/pages/body-weight/body-weight-list.component';
+import { BodyWeightListComponent } from './view/pages/body-weight/body-weight-list/body-weight-list.component';
 import { ActivitiesListComponent } from './view/pages/activities/activities-list.component';
 
 const routes: Routes = [

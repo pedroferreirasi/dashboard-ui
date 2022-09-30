@@ -1,6 +1,6 @@
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,9 +10,10 @@ import { DashboardComponent } from './view/pages/dashboard/dashboard.component';
 import { BodyMesureListComponent } from './view/pages/body-mesure/body-mesure-list.component';
 import { MenuComponent } from './view/component/menu/menu.component';
 import { FichaMedicaComponent } from './view/component/ficha-medica/ficha-medica.component';
-import { BodyWeightListComponent } from './view/pages/body-weight/body-weight-list.component';
+import { BodyWeightListComponent } from './view/pages/body-weight/body-weight-list/body-weight-list.component';
 import { FichaMedicaListComponent } from './view/pages/ficha-medica/ficha-medica-list.component';
 import { ActivitiesListComponent } from './view/pages/activities/activities-list.component';
+import { BodyWeightFormComponent } from './view/pages/body-weight/body-weight-form/body-weight-form.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,15 @@ import { ActivitiesListComponent } from './view/pages/activities/activities-list
     FichaMedicaComponent,
     BodyWeightListComponent,
     FichaMedicaListComponent,
-    ActivitiesListComponent
+    ActivitiesListComponent,
+    BodyWeightFormComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
